@@ -1,0 +1,23 @@
+<h3>Welcome {{user.name}} | {{user.email}} | {{user.age}}</h3>
+
+<h1 class="text-center">Products</h1>
+<div class="d-flex flex-wrap">
+    {{#each allProducts}}
+
+    <div class="card m-3 " style="width: 18rem;">
+        
+    <div class="card-body">
+        <h5 class="card-title text-center fs-2">{{title}}</h5>
+        <p class="card-text">{{description}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : {{price}} €</li>
+        <li class="list-group-item">Stock :  {{stock}} </li>
+        <li class="list-group-item">Code : {{code}} </li>
+    </ul>
+    
+    </div> 
+{{/each}} 
+</div>
+
+
